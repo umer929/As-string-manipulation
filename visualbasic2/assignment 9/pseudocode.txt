@@ -1,0 +1,25 @@
+
+        DECLARE str1, str2 : String
+        DECLARE thischar1, thischar2 : Char
+        DECLARE finalstr1, finalstr2 : String
+
+        str1  ← ""
+        str2  ← ""
+        thischar1  ← ""
+        thischar2  ← ""
+        finalstr1  ← ""
+        finalstr2  ← ""
+
+        INPUT(" Enter Sring 1 : "),str1 
+        
+        INPUT(" Enter String 2 : "),str2
+
+        thischar1 = Left(str1, 2)
+        thischar2 = Left(str2, 2)
+        finalstr1 = Mid(str1, 3, Len(str1) - 2)
+        finalstr2 = Mid(str2, 3, Len(str2) - 2)
+
+        OUTPUT(thischar2 , finalstr1)
+        
+        OUTPUT(thischar1 , finalstr2)
+         End

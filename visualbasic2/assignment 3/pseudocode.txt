@@ -1,0 +1,33 @@
+        DECLARE Str1 : String
+        DECLARE Char1 : Char
+        DECLARE a, digitCounter, alphabetCounter : Integer
+
+
+        Str1 ← ""
+        Char1 ← ""
+        a ← 0
+        digitCounter ← 0
+        alphabetCounter ← 0
+
+
+        INPUT ("Enter string : "),Str1 
+
+           For a ←1 To Len(Str1)
+            Char1 ← Mid(Str1, a, 1)
+            Char1 ← Upper(Char1)
+            If Char1 >= "A" And Char1 <= "Z" 
+            Then
+                alphabetCounter ← alphabetCounter + 1
+            ElseIf Char1 >= "0" And Char1 <= "9" 
+             Then
+                digitCounter ← digitCounter + 1
+            End If
+        Next
+
+         
+        OUTPUT ("In this Alphabets are: " , alphabetCounter)
+        OUTPUT("In this Digits are: " , digitCounter)
+
+
+
+       

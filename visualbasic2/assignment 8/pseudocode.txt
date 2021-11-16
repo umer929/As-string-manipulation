@@ -1,0 +1,16 @@
+
+        DECLARE : String
+        DECLARE thischar : Char
+        DECLARE myChar : Char
+
+        INPUT("Enter String: "),str1 
+        
+        thischar = Left(str1, 1)
+        For COUNT ← 1 To Len(str1) - 1
+            myChar ← Mid(str1, (COUNT + 1), 1)
+            If myChar ← thischar Then
+                myChar = "*"
+            End If
+            OUTPUT(myChar)
+       
+

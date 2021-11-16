@@ -1,0 +1,23 @@
+  
+        DECLARE str1, str2, thischar1, thischar2 : String
+        str1 ← ""
+        str2 ← ""
+        thischar1 ← ""
+        thischar2 ← ""
+
+        INPUT("Enter String: "),str1
+       
+
+        If Len(str1) < 2 
+         Then
+            OUTPUT(str1)
+            
+        Else
+            thischar1 = Right(str1, 2)
+            thischar2 = Left(str1, 2)
+
+            OUTPUT(thischar2 , thischar1)
+            
+
+
+        End If

@@ -1,0 +1,31 @@
+Sub Main()
+        DECLARE str1 : String
+        DECLARE word1 : String
+        DECLARE finalstring : String
+        DECLARE word2 : String
+
+        str1 ← ""
+        word1 ← "ing"
+        word2 ← "ly"
+        finalstring ← ""
+
+        INPUT("enter string: "),str1
+        
+        str1 ← LCase(str1)
+
+        If Len(str1) < 3 
+        Then
+            finalstring ← str1
+        ElseIf Len(str1) >= 3 
+        Then
+            If Right(str1, 3) = word1 
+           Then
+                finalstring ← str1 & word2
+            Else
+                finalstring = str1 & word1
+            End If
+
+        End If
+
+        OUTPUT("final string is: " & finalstring)
+        

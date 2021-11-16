@@ -1,0 +1,27 @@
+Pseudocode
+
+DECLARE thisChar : CHARACTER
+DECLARE Counter : INTEGER
+DECLARE outputstring: STRING
+DECLARE line1 : STRING
+DECLARE line2 : CHARACTER
+
+line1 = ""
+thisChar = ""
+Counter = 0
+outputstring = ""
+line2 =""
+
+INPUT "Enter String: ",line1
+INPUT "Enter character to remove : ",line2
+
+
+For Counter  = 1 to LENGTH(line1)
+   myChar = MID(X,Counter,1)
+   IF myChar <> line2
+   THEN
+   outString = outString & thisChar
+    ENDIF
+
+OUTPUT outString
+
